@@ -1,0 +1,14 @@
+\begin{thebibliography}{1}
+
+\bibitem{awk}
+Alfred~V. Aho, Brian~W. Kernighan, and Peter~J. Weinberger.
+\newblock {\em The AWK Programming Language}.
+\newblock Addison-Wesley, 1988.
+
+\bibitem{latex}
+{LaTeX3 Project Team}.
+\newblock The latex project.
+\newblock \url{https://www.latex-project.org}, 2024.
+\newblock Accessed: 2024-04-21.
+
+\end{thebibliography}
