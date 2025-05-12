@@ -1,0 +1,27 @@
+.fp 5 CBI
+.ft CR
+.nf
+\f(CBstatic\f(CR \f(CBchar\f(CR *sccsid = \fB"@(#)echo.c        4.1 (Berkeley) 10/1/80"\f(CR;
+#include <stdio.h>
+
+main(argc, argv)
+\f(CBint\f(CR argc;
+\f(CBchar\f(CR *argv[];
+{
+        \f(CBregister\f(CR \f(CBint\f(CR i, nflg;
+
+        nflg = \f50\f(CR;
+        \f(CBif\f(CR(argc > \f51\f(CR && argv[\f51\f(CR][\f50\f(CR] == \fI'-'\f(CR && argv[\f51\f(CR][\f51\f(CR] == \fI'n'\f(CR) {
+                nflg++;
+                argc--;
+                argv++;
+        }
+        \f(CBfor\f(CR(i=\f51\f(CR; i<argc; i++) {
+                fputs(argv[i], stdout);
+                \f(CBif\f(CR (i < argc-\f51\f(CR)
+                        putchar(\fI' '\f(CR);
+        }
+        \f(CBif\f(CR(nflg == \f50\f(CR)
+                putchar(\fI'\n'\f(CR);
+        exit(\f50\f(CR);
+}
